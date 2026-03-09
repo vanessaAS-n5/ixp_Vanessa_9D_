@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About - Physics Lab</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+/* BACKGROUND */
+
+body{
+min-height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
+url("lab.jpg");
+
+background-size:cover;
+background-position:center;
+
+color:white;
+
+padding-top:100px;
+}
+
+/* NAVBAR */
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:80px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:0 60px;
+
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+
+z-index:1000;
+}
+
+.logo-container{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo-img{
+height:60px;
+}
+
+.logo-text{
+font-size:24px;
+font-weight:600;
+color:#1e90ff;
+}
+
+.nav-links{
+display:flex;
+gap:35px;
+list-style:none;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-size:18px;
+position:relative;
+}
+
+.nav-links a:hover{
+color:#1e90ff;
+}
+
+.nav-links a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0%;
+height:2px;
+background:#1e90ff;
+transition:0.3s;
+}
+
+.nav-links a:hover::after{
+width:100%;
+}
+
+/* TITLE */
+
+h1{
+text-align:center;
+font-size:60px;
+margin-bottom:20px;
+color:#1e90ff;
+}
+
+/* ABOUT TEXT */
+
+.about-text{
+width:70%;
+margin:auto;
+text-align:center;
+line-height:1.6;
+color:#ddd;
+margin-bottom:50px;
+}
+
+/* TEAM GRID */
+
+.team{
+width:85%;
+margin:auto;
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+}
+
+/* CARD */
+
+.member{
+
+background:rgba(255,255,255,0.08);
+
+padding:30px;
+
+border-radius:18px;
+
+text-align:center;
+
+transition:0.4s;
+
+backdrop-filter:blur(6px);
+
+}
+
+.member:hover{
+
+transform:translateY(-10px) scale(1.05);
+
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+
+}
+
+/* NAME */
+
+.member h3{
+color:#1e90ff;
+margin-bottom:10px;
+}
+
+/* ROLE */
+
+.member p{
+color:#ddd;
+font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo-container">
+<img src="logo.png" class="logo-img">
+<div class="logo-text">PHYSICS LAB</div>
+</div>
+
+<ul class="nav-links">
+<li><a href="Home.html">Home</a></li>
+<li><a href="Grade 7.html">Grade 7</a></li>
+<li><a href="Grade 8.html">Grade 8</a></li>
+<li><a href="Grade 9.html">Grade 9</a></li>
+<li><a href="Exercise.html">Exercise</a></li>
+<li><a href="School info.html">School Information</a></li>
+<li><a href="handout.html">Handout</a></li>
+<li><a href="reference.html">References</a></li>
+</ul>
+
+</nav>
+
+<h1>About This Website</h1>
+
+<div class="about-text">
+
+<p>
+Physics Lab is an interactive learning website created to help students understand physics concepts in a more engaging and fun way.
+This platform provides explanations, interactive content, exercises, and learning resources for Grade 7, Grade 8, and Grade 9 students.
+</p>
+
+</div>
+
+<h1>Our Team</h1>
+
+<div class="team">
+
+<div class="member">
+<h3>Nadine Nathania Sutisna</h3>
+<p>Website Designer & Developer</p>
+</div>
+
+<div class="member">
+<h3>Vanessa Angel Setiawan</h3>
+<p>Researcher, Scriptwriter, and Video Editor</p>
+</div>
+
+<div class="member">
+<h3>Joy Christin</h3>
+<p>Researcher, Scriptwriter, and Video Editor</p>
+</div>
+
+<div class="member">
+<h3>Katarina Nathania Carissa</h3>
+<p>Website Designer & Developer</p>
+</div>
+
+</div>
+
+</body>
+</html>
